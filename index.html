@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="master-form">
+        <div class="form">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form">
+            <label for="dropdown">
+                TBD(Dropdown)
+            </label>
+            <select name="options" id="dropdown">
+                <option>Option1</option>
+                <option>Option2</option>
+                <option>Option3</option>
+                <option>Option4</option>
+            </select>
+        </div>
+  
+        <div class="form">
+            <label>
+                TBD(y/n)
+            </label>
+            <label for="Y">
+                <input type="radio"
+                       id="Y"
+                       name="yes">Yes</input>
+            </label>
+            <label for="N">
+                <input type="radio"
+                       id="N"
+                       name="no">No</input>
+            </label>
+        </div>
+  
+        <div class="form">
+            <label>TBD(multiple answers)</label>
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">choice1</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">choice2</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">choice3</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">choice4</input></label>
+        </div>
+  
+        <div class="form">
+            <label for="comment">
+                TBD(comment)
+            </label>
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
