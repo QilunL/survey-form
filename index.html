@@ -1,88 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Survey Form</h1>
+  </head>
+  <body>
     <form id="master-form">
-        <div class="form">
-            <label for="name" id="label-name">
-                Name
-            </label>
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
-        </div>
+      <h1>Survey Form</h1>
+      <div class="form-info">
+        <label for="name" id="label-name"> NAME: </label>
+        <input type="text" id="name" autocomplete="off" />
+      </div>
 
-        <div class="form">
-            <label for="age" id="label-age">
-                Age
-            </label>
-            <input type="text"
-                   id="age"
-                   placeholder="Enter your age" />
-        </div>
-  
-        <div class="form">
-            <label for="dropdown">
-                TBD(Dropdown)
-            </label>
-            <select name="options" id="dropdown">
-                <option>Option1</option>
-                <option>Option2</option>
-                <option>Option3</option>
-                <option>Option4</option>
-            </select>
-        </div>
-  
-        <div class="form">
-            <label>
-                TBD(y/n)
-            </label>
-            <label for="Y">
-                <input type="radio"
-                       id="Y"
-                       name="yes">Yes</input>
-            </label>
-            <label for="N">
-                <input type="radio"
-                       id="N"
-                       name="no">No</input>
-            </label>
-        </div>
-  
-        <div class="form">
-            <label>TBD(multiple answers)</label>
-            <label for="inp-1">
-                <input type="checkbox"
-                       name="inp">choice1</input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">choice2</input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">choice3</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">choice4</input></label>
-        </div>
-  
-        <div class="form">
-            <label for="comment">
-                TBD(comment)
-            </label>
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
-            </textarea>
-        </div>
-        <button type="submit" value="submit">
-            Submit
-        </button>
+      <div class="form-info">
+        <label for="age" id="label-age"> AGE: </label>
+        <input type="number" id="age" autocomplete="off" />
+      </div>
+
+      <div class="form-options">
+        <label for="dropdown"> CHOOSE PACKAGE: </label>
+        <select name="options" id="dropdown">
+          <option>Package 1</option>
+          <option>Package 2</option>
+          <option>Package 3</option>
+          <option>Package 4</option>
+        </select>
+      </div>
+
+      <div class="form-gender">
+        <label> GENDER: </label>
+        <label for="gender">
+          <input type="radio" id="gender" name="gender" />
+          Male
+        </label>
+        <label for="gender">
+          <input type="radio" id="gender" name="gender" />
+          Female
+        </label>
+      </div>
+      <!-- ***************************************** -->
+      <div class="form-transport">
+        <label>TRANSPORT:</label>
+        <label for="inp-1"> <input type="checkbox" name="inp" />Car</label>
+        <label for="inp-2"> <input type="checkbox" name="inp" />Bus</label>
+        <label for="inp-3"> <input type="checkbox" name="inp" />Plane</label>
+        <label for="inp-4"> <input type="checkbox" name="inp" />Boat</label>
+      </div>
+
+      <div class="form-comment">
+        <label for="comment">TRAVEL SUGGESTIONS:</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+      <button type="submit" value="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
