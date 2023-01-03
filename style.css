@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --warm-orange: rgb(245, 91, 91);
+}
+::selection {
+  background-color: var(--warm-orange);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+#master-form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  overflow: hidden;
+}
+
+#master-form h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--warm-orange);
+  cursor: default;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.form-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.form-info input {
+  font-size: 1.1rem;
+  padding: 0 6px;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.form-info input#age {
+  text-align: center;
+}
+
+.form-options {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px;
+}
+
+.form-options select {
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+option {
+  font-size: 1rem;
+}
+
+.form-gender {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.form-gender label:nth-child(1) {
+  margin-right: 5px;
+}
+
+.form-gender label:nth-child(2) {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+.form-gender label:nth-child(3) {
+  font-size: 1.1rem;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d9d9d9;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+  transition: 0.25s;
+}
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: var(--warm-orange);
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.form-transport {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px;
+}
+
+.form-transport input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: var(--warm-orange);
+}
+
+.form-comment {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form-comment textarea {
+  width: 100%;
+  height: 155px;
+  padding: 2px 4px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+button[type="submit"] {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: var(--warm-orange);
+  padding: 2px 15px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  box-shadow: 1px 2px 3px black;
+}
+
+button[type="submit"]:active {
+  translate: 0 1px;
+}
+
+button[type="submit"]:hover {
+  filter: brightness(120%);
+  transition: 0.15s;
+}
